@@ -5,183 +5,109 @@
   box-sizing: border-box;
 }
 
-/* Tipografía accesible */
+/* Tipografía y colores base */
 body {
-  font-family: 'Georgia', serif;
-  font-size: 1.1rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
-  color: #222;
   background-color: #fdfdfd;
-  padding: 2rem;
+  color: #333;
 }
 
 /* Encabezado */
 header {
-  background-color: #003366;
+  background: #003366;
   color: #fff;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.subtitulo {
-  font-size: 1rem;
-  color: #cce0ff;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-header section {
-  margin-top: 1.5rem;
-}
-
-header h2 {
-  font-size: 1.2rem;
-  color: #003366;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  color: #003366;
-}
-
-/* Navegación */
-nav ul {
-  list-style: none;
-  margin-top: 1rem;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
+header .Titulo {
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Títulos */
-h1 {
-  font-size: 2rem;
-  color: #003366;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #003366;
-}
-
-/* Párrafos */
-p {
-  margin-bottom: 1rem;
-}
-
-/* Secciones */
-section {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background-color: #f4f4f4;
-  border-left: 4px solid #003366;
-  border-radius: 6px;
-}
-
-/* Footer */
-footer[role="contentinfo"] {
-  margin-top: 60px;
-  font-size: 0.9em;
-  color: #888;
-  text-align: center;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
-}
-
-footer .relaciones {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 10px;
-  text-align: center;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
+header .subtitulo {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
 }
 
 /* Bloque de artículos */
 .contenedor-articulos {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #eef2f5;
-  border-left: 4px solid #003366;
-  border-radius: 6px;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .contenedor-articulos h2 {
-  font-size: 1.4rem;
-  color: #003366;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.proximo-articulo {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 1rem;
+.contenedor-articulos ul {
+  list-style: none;
 }
 
-/* Formulario de comentarios */
-.formulario-testimonial {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border-left: 4px solid #003366;
-  border-radius: 6px;
+.contenedor-articulos li {
+  margin: 0.5rem 0;
 }
 
-.formulario-testimonial label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
+.contenedor-articulos a {
   color: #003366;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.formulario-testimonial input,
-.formulario-testimonial textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.contenedor-articulos a:hover {
+  text-decoration: underline;
 }
 
-.formulario-testimonial button {
-  margin-top: 1rem;
-  background-color: #003366;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+/* Navegación */
+.navegacion-articulos {
+  text-align: center;
+  margin: 2rem 0;
 }
 
-.formulario-testimonial button:hover {
-  background-color: #0055aa;
+.navegacion-articulos a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+.navegacion-articulos a:hover {
+  text-decoration: underline;
+}
 
+/* Footer */
+footer {
+  background: #222;
+  color: #eee;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #eee;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header .Titulo {
+    font-size: 1.6rem;
+  }
+
+  .contenedor-articulos {
+    padding: 0 0.5rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
 

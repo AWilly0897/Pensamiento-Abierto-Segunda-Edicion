@@ -4,17 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pensamiento Abierto2 · Ernesto Ireneo Lora</title>
-  <link rel="stylesheet" href="/css/estilos.css" />
-  <link rel="icon" href="Favicon.ico" type="image/x-icon" />
-  <style>
-    nav a {
-      color: #003366;
-      /* azul oscuro, visible sobre fondo claro */
-      font-weight: bold;
-      text-decoration: none;
-    }
-  </style>
+  <title>Pensamiento Abierto · Segunda Edicion</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+ <link rel="stylesheet" href="css/estilos.css">   
 </head>
 
 <body>
@@ -23,7 +15,6 @@
     <p class="subtitulo">
       Hechos tomados de distintos pensamientos pero con el mismo fin · Segunda edición · 2026 - Ernesto I. Lora
     </p>
-
     <section role="region" aria-labelledby="bienvenida">
       <h2 id="bienvenida">Bienvenida</h2>
       <p>
@@ -58,18 +49,8 @@
   <!-- Footer -->
   <div id="bloque-footer"></div>
 
-  <!-- Scripts -->
-  <script src="/script.js"></script>
   <script>
-    // Cargar el formulario y el footer como componentes
-    fetch("/componentes/formulario-comentario.html")
-      .then(res => res.text())
-      .then(html => {
-        const bloqueFormulario = document.getElementById("bloque-formulario");
-        if (bloqueFormulario) bloqueFormulario.innerHTML = html;
-      });
-
-    fetch("/componentes/footer.html")
+    fetch("componentes/footer.html")
       .then(res => res.text())
       .then(html => {
         document.getElementById("bloque-footer").innerHTML = html;

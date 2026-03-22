@@ -36,7 +36,7 @@ async function mostrarComentariosPublicados() {
   if (!lista) return;
 
   const owner = "AWilly0897"; // tu usuario de GitHub
-  const repo = "Pensamiento-Abierto2"; // tu repositorio donde guardás los comentarios
+  const repo = "Pensamiento-Abierto-Segunda-Edicion"; // tu repositorio donde guardás los comentarios
 
   try {
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues`);

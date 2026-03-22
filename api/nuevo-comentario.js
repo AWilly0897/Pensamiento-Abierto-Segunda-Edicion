@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     console.log("Token recibido:", process.env.GITHUB_TOKEN ? "OK" : "NO DEFINIDO");
 
     const response = await fetch(
-      "https://api.github.com/repos/AWilly0897/Pensamiento-Abierto2/issues",
+      "https://api.github.com/repos/AWilly0897/Pensamiento-Abierto-Segunda-Edicion/issues",
       {
         method: "POST",
         headers: {
