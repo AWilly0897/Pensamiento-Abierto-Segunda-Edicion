@@ -25,13 +25,14 @@ export default async function handler(req, res) {
         },
         body: JSON.stringify({
           title: comentario, // el texto principal como título del Issue
-          body: `Comentario enviado por: ${nombre}`
+          body: `Comentario enviado por: ${nombre}\nArtículo: ${articulo}`,
+          labels: [articulo] // 🔹 etiqueta con el título del artículo
         })
       }
     );
 
     if (!response.ok) {
-      throw new Error(`GitHub API error: ${response.status}`);
+      throw new Error(`Error de API de GitHub: ${response.status}`);
     }
 
     const issue = await response.json();
