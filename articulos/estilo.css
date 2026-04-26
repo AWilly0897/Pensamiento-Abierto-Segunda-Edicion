@@ -16,10 +16,20 @@ header[role="banner"] {
   margin-bottom: 30px;
 }
 
-header h1 {
-  color: #005f73;
+header h1.titulo {
+  color: #32CD32; /* Verde lima brillante */
   font-size: 2.2em;
   margin-bottom: 0;
+}
+header p.articulo {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #32CD32; /* Mismo color que el título */
+  
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .articulo {
@@ -141,4 +151,35 @@ a:hover {
 /* Evitar que aria-hidden afecte visualmente */
 [aria-hidden="true"] {
   visibility: hidden;
+}
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    margin: 20px auto;       /* reducir márgenes */
+    max-width: 100%;         /* ocupar todo el ancho disponible */
+    padding: 0 10px;         /* menos padding lateral */
+    font-size: 0.95em;       /* texto un poco más chico */
+  }
+
+  header h1 {
+    font-size: 1.6em;        /* reducir tamaño del título */
+    word-wrap: break-word;   /* evitar que se desborde */
+    text-align: center;      /* centrar para mejor lectura */
+  }
+
+  .articulo {
+    text-align: center;      /* centrar subtítulo */
+    margin-bottom: 20px;
+  }
+
+  footer[role="contentinfo"] {
+    font-size: 0.8em;        /* texto más compacto */
+    padding: 10px;           /* menos espacio */
+    word-wrap: break-word;   /* evitar desbordes */
+  }
+
+  .navegacion-articulos li {
+    display: block;          /* enlaces uno debajo del otro */
+    margin: 0.5rem 0;
+  }
 }

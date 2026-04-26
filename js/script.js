@@ -6,10 +6,7 @@
     { nombre: "articulo4.html", titulo: "Artículo 4", fecha: "2026-02-26T21:00:00" },
     { nombre: "articulo5.html", titulo: "Artículo 5", fecha: "2026-03-02T21:00:00" },
     { nombre: "articulo6.html", titulo: "Artículo 6", fecha: "2026-03-08T21:00:00" },
-    { nombre: "articulo7.html", titulo: "Artículo 7", fecha: "2026-03-14T21:00:00" },
-    { nombre: "articulo8.html", titulo: "Artículo 8", fecha: "2026-03-20T21:00:00" },
-    { nombre: "articulo9.html", titulo: "Artículo 9", fecha: "2026-03-26T21:00:00" },
-    { nombre: "articulo10.html", titulo: "Artículo 10", fecha: "2026-04-01T21:00:00" },
+    
     // Agregá más artículos según tu cronograma editorial
   ];
 
