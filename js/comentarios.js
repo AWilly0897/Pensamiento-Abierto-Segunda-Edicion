@@ -1,33 +1,6 @@
 // js/comentario.js
 document.addEventListener("DOMContentLoaded", () => {
   mostrarComentariosPublicados();
-
-  // Capturar envío del formulario
-  document.addEventListener("submit", async function (e) {
-    if (e.target && e.target.id === "formulario-comentario") {
-      e.preventDefault();
-
-      const nombre = document.getElementById("nombre").value.trim() || "Anónimo";
-      const comentario = document.getElementById("comentario").value.trim();
-
-      if (!comentario) return; // evitar comentarios vacíos
-
-      try {
-        // Enviar comentario al backend en Vercel
-        await fetch("/api/nuevo-comentario", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ nombre, comentario })
-        });
-
-        // Refrescar lista de comentarios
-        mostrarComentariosPublicados();
-        e.target.reset();
-      } catch (error) {
-        console.error("Error al enviar comentario:", error);
-      }
-    }
-  });
 });
 
 // Mostrar comentarios publicados desde GitHub Issues
@@ -36,7 +9,7 @@ async function mostrarComentariosPublicados() {
   if (!lista) return;
 
   const owner = "AWilly0897"; // tu usuario de GitHub
-  const repo = "Pensamiento-Abierto-Segunda-Edicion"; // tu repositorio donde guardás los comentarios
+  const repo = "Pensamiento-Abierto-Segunda-Edicion"; // tu repositorio
 
   try {
     const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues`);
@@ -59,4 +32,3 @@ async function mostrarComentariosPublicados() {
     console.error("Error al cargar comentarios:", error);
   }
 }
-
