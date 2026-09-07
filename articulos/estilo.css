@@ -11,37 +11,24 @@ body {
 
 /* Encabezado */
 header[role="banner"] {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
+  background-color: #003366; /* azul profundo */
+  color: #FFD700; /* amarillo dorado */
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 3px solid #002244;
 }
 
 header h1.titulo {
-  color: #32CD32; /* Verde lima brillante */
+  color: #FFD700;
   font-size: 2.2em;
   margin-bottom: 0;
 }
+
 header p.articulo {
   font-style: italic;
   font-size: 1.5rem;
-  color: #32CD32; /* Mismo color que el título */
-  
-  padding: 5px 10px;
-  border-radius: 4px;
-  display: inline-block;
+  color: #FFD700;
   margin-top: 8px;
-}
-
-.articulo {
-  font-style: italic;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-/* Navegación (si se usa) */
-nav[role="navigation"] {
-  margin-bottom: 20px;
-  font-size: 0.95em;
 }
 
 /* Contenido principal */
@@ -55,14 +42,26 @@ section {
 
 section h2 {
   font-size: 1.4em;
-  color: #00796b;
+  color: #003366;
   margin-bottom: 10px;
-  border-left: 4px solid #00796b;
+  border-left: 4px solid #003366;
   padding-left: 10px;
 }
 
 section p {
   margin-bottom: 20px;
+}/* Fuente y estructura general */
+
+.articulo {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Navegación (si se usa) */
+nav[role="navigation"] {
+  margin-bottom: 20px;
+  font-size: 0.95em;
 }
 
 /* Cita destacada */
@@ -120,7 +119,7 @@ blockquote[aria-label] {
 footer[role="contentinfo"] {
   margin-top: 60px;
   font-size: 0.9em;
-  color: #888;
+  color: #ca1f1f;
   text-align: center;
   border-top: 1px solid #ccc;
   padding-top: 10px;
