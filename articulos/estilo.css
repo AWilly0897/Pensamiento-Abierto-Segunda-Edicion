@@ -20,13 +20,13 @@ header[role="banner"] {
 
 header h1.titulo {
   color: #FFD700;
-  font-size: 2.2em;
+  font-size: 2.0em;
   margin-bottom: 0;
 }
 
 header p.articulo {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #FFD700;
   margin-top: 8px;
 }
@@ -118,8 +118,8 @@ blockquote[aria-label] {
 /* Pie de página */
 footer[role="contentinfo"] {
   margin-top: 60px;
-  font-size: 0.9em;
-  color: #ca1f1f;
+  font-size: 1.2em;
+  color:#FFD700;
   text-align: center;
   border-top: 1px solid #ccc;
   padding-top: 10px;
