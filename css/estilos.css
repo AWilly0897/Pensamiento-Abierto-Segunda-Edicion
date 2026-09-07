@@ -19,11 +19,13 @@ header {
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
+  border-bottom: 4px solid #002244; /* línea que delimita el bloque superior */
 }
 
 header .Titulo {
   font-size: 2.2rem;
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 header .subtitulo {
@@ -32,20 +34,24 @@ header .subtitulo {
   opacity: 0.9;
 }
 
-/* Bloque de artículos */
+/* Contenedor principal */
 .contenedor-articulos {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
+  text-align: center; /* centra todo el bloque */
 }
 
 .contenedor-articulos h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #003366;
 }
 
+/* Lista de artículos */
 .contenedor-articulos ul {
   list-style: none;
+  padding: 0;
 }
 
 .contenedor-articulos li {
@@ -55,7 +61,8 @@ header .subtitulo {
 .contenedor-articulos a {
   color: #003366;
   text-decoration: none;
-  font-weight: bold;
+  font-style: italic; /* cambia a cursiva */
+  font-weight: 500;
 }
 
 .contenedor-articulos a:hover {
@@ -70,7 +77,8 @@ header .subtitulo {
 
 .navegacion-articulos a {
   color: #003366;
-  font-weight: bold;
+  font-style: italic; /* cursiva para coherencia */
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -80,16 +88,18 @@ header .subtitulo {
 
 /* Footer */
 footer {
-  background: #222;
-  color: #eee;
+  background: #003366; /* mismo color que el encabezado */
+  color: #fff; /* texto blanco para contraste */
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
+  font-family: 'Segoe UI', Arial, sans-serif; /* misma tipografía */
 }
 
 footer a {
-  color: #eee;
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
 }
 
 footer a:hover {
